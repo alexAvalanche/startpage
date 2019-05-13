@@ -85,7 +85,11 @@ body {
     }
     .bookmark-container > .bookmark-set {
         width: auto;
-        margin: 1em 0em;
+        margin: 1em 3em;
+    }
+
+    .bookmark {
+        text-align: center;
     }
 }
 
