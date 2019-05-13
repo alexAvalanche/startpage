@@ -91,6 +91,10 @@ body {
     .bookmark {
         text-align: center;
     }
+
+    #search-field {
+        font-size: 2rem;
+    }
 }
 
 .bookmark-set{
