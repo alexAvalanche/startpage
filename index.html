@@ -539,8 +539,8 @@
             let helloCount = Object.keys(helloJson).length;
             let language = Math.floor(Math.random * helloCount);
             
-            document.getElementById("hello").innerHTML = hello[language]["hello"] + " Alex";
-            document.getElementById("language").innerHTML = hello[language]["language"];
+            document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex";
+            document.getElementById("language").innerHTML = helloJson[language]["language"];
             
             // Set up the clock
             document.getElementById("clock").innerHTML = getTime();
