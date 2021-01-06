@@ -15,7 +15,7 @@
     <div id="search">
         <input id="search-field" type="text" name="search-field" onkeypress="return search(event)"/>
     </div>
-    <div class="container">
+    <div class="container" id="main">
         <div id="clock"></div>
         <div class="weather-container">
             <div class="row">
@@ -160,13 +160,13 @@
                     event.preventDefault();
                     document.getElementById('search').style.display = 'flex';
                     document.getElementById('search-field').focus();
-                    document.getElementById('container').style.display = 'none';
+                    document.getElementById('main').style.display = 'none';
                 } else {
                     // swiped right
                     document.getElementById('search-field').value = '';
                     document.getElementById('search-field').blur();
                     document.getElementById('search').style.display = 'none';
-                    document.getElementById('container').style.display = 'flex';
+                    document.getElementById('main').style.display = 'flex';
                 }  
             } 
 
