@@ -516,7 +516,7 @@
             
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(function(position){            
-                    xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude +'&lon=' + position.coords.longitude + '&units=imperial&appid=f1ebee51ad63f32fdf9907fac1348dee');
+                    xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?lat=' + position.coords.latitude + '&lon=' + position.coords.longitude + '&units=imperial&appid=f1ebee51ad63f32fdf9907fac1348dee');
                     xhr.onload = () => {
                         if (xhr.readyState === 4) {
                             if (xhr.status === 200) {
@@ -530,9 +530,11 @@
                         }                 
                     }     
                 });
+                
+                xhr.send();
             } 
             
-            xhr.send();
+            
             
             // hello message            
             let helloCount = Object.keys(helloJson).length;
