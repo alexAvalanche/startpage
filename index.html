@@ -98,10 +98,6 @@
         window.onload = () => {
             let helloJson = [
               {
-                "language": "English",
-                "hello": "Welcome!"
-              },
-              {
                 "language": "Afrikaans",
                 "hello": "hallo"
               },
@@ -151,7 +147,7 @@
               },
               {
                 "language": "Cebuano",
-                "hello": "Hello"
+                "hello": "Kumusta"
               },
               {
                 "language": "Chichewa",
@@ -199,7 +195,7 @@
               },
               {
                 "language": "Filipino",
-                "hello": "Hello"
+                "hello": "Kamusta"
               },
               {
                 "language": "Finnish",
@@ -211,7 +207,7 @@
               },
               {
                 "language": "Frisian",
-                "hello": "Hello"
+                "hello": "Hoi"
               },
               {
                 "language": "Galician",
@@ -243,7 +239,7 @@
               },
               {
                 "language": "Hawaiian",
-                "hello": "Alohaʻoe"
+                "hello": "Aloha"
               },
               {
                 "language": "Hebrew",
@@ -287,7 +283,7 @@
               },
               {
                 "language": "Javanese",
-                "hello": "Hello"
+                "hello": "halo"
               },
               {
                 "language": "Kannada",
@@ -306,8 +302,8 @@
                 "hello": "안녕하세요."
               },
               {
-                "language": "Kurdish (Kurmanji)",
-                "hello": "Hello"
+                "language": "Kurdish",
+                "hello": "Slav"
               },
               {
                 "language": "Kyrgyz",
@@ -339,7 +335,7 @@
               },
               {
                 "language": "Malagasy",
-                "hello": "Hello"
+                "hello": "Salama"
               },
               {
                 "language": "Malay",
@@ -366,8 +362,8 @@
                 "hello": "Сайн байна уу"
               },
               {
-                "language": "Myanmar (Burmese)",
-                "hello": "မင်္ဂလာပါ"
+                "language": "Burmese",
+                "hello": "ဟယ်လို"
               },
               {
                 "language": "Nepali",
@@ -411,19 +407,15 @@
               },
               {
                 "language": "Scots Gaelic",
-                "hello": "Hello"
+                "hello": "Halò"
               },
               {
                 "language": "Serbian",
                 "hello": "Здраво"
               },
               {
-                "language": "Sesotho",
-                "hello": "Hello"
-              },
-              {
                 "language": "Shona",
-                "hello": "Hello"
+                "hello": "mhoro"
               },
               {
                 "language": "Sindhi",
@@ -541,8 +533,8 @@
             let helloCount = Object.keys(helloJson).length;
             let language = Math.floor(Math.random() * helloCount);
             
-            document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex";
-            document.getElementById("helloLanguage").innerHTML = helloJson[language]["language"];
+            document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex".toUpperCase();
+            document.getElementById("helloLanguage").innerHTML = helloJson[language]["language"].toUpperCase();
             
             // Set up the clock
             document.getElementById("clock").innerHTML = getTime();
