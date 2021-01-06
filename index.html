@@ -533,7 +533,7 @@
             let helloCount = Object.keys(helloJson).length;
             let language = Math.floor(Math.random() * helloCount);
             
-            document.getElementById("hello").innerHTML = (helloJson[language]["hello"]).toUppserCase() + " Alex".toUpperCase();
+            document.getElementById("hello").innerHTML = (helloJson[language]["hello"]).toUpperCase() + " Alex".toUpperCase();
             document.getElementById("helloLanguage").innerHTML = helloJson[language]["language"].toUpperCase();
             
             // Set up the clock
