@@ -517,7 +517,6 @@
               }
             ];
                 
-            console.log(helloJson[0]);
             let xhr = new XMLHttpRequest();
             // Request to open weather map
             xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=4144620&units=imperial&appid=f1ebee51ad63f32fdf9907fac1348dee');
@@ -538,9 +537,7 @@
             
             // hello message            
             let helloCount = Object.keys(helloJson).length;
-            console.log(helloCount);
-            let language = Math.floor(Math.random * helloCount);
-            console.log(language);
+            let language = Math.floor(Math.random() * helloCount);
             
             document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex";
             document.getElementById("language").innerHTML = helloJson[language]["language"];
