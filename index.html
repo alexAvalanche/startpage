@@ -527,10 +527,12 @@
                             } else {
                                 console.log('error msg: ' + xhr.status);
                             }
-                        }
+                        }                 
                     }     
                 });
-            } else {              
+            } else {
+                let xhr = new XMLHttpRequest();
+                
                 xhr.open('GET', 'https://api.openweathermap.org/data/2.5/weather?id=4144620&units=imperial&appid=f1ebee51ad63f32fdf9907fac1348dee');
                 xhr.onload = () => {
                     if (xhr.readyState === 4) {
