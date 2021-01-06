@@ -168,8 +168,8 @@
                 }  
             } else {
                 // sliding vertically
-                if (diffY > 0) {
-                // swiped up
+                if (diffY > 0 && document.getElementById('search-field')) {
+                event.preventDefault();
                 } else {
                 // swiped down
                 }  
