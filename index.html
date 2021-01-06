@@ -528,6 +528,8 @@
                 }
             }
             
+            xhr.send();
+            
             // hello message            
             let helloCount = Object.keys(helloJson).length;
             let language = Math.floor(Math.random() * helloCount);
