@@ -30,6 +30,7 @@ body {
     font-family: "Roboto Mono";
     color: #fff;
     margin-bottom: .35em;
+    align-items: center;
 }
 
 #search {
