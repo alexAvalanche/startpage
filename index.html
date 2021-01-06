@@ -113,7 +113,7 @@
             xhr.send();
             
             // hello message            
-            let helloJson = JSON.parse(hello);
+            let helloJson = hello;
             let helloCount = Object.keys(helloJson).length;
             let language = Math.floor(Math.random * helloCount);
             
