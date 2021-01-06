@@ -538,7 +538,9 @@
             
             // hello message            
             let helloCount = Object.keys(helloJson).length;
+            console.log(helloCount);
             let language = Math.floor(Math.random * helloCount);
+            console.log(language);
             
             document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex";
             document.getElementById("language").innerHTML = helloJson[language]["language"];
