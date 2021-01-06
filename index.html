@@ -540,7 +540,7 @@
             let language = Math.floor(Math.random() * helloCount);
             
             document.getElementById("hello").innerHTML = helloJson[language]["hello"] + " Alex";
-            document.getElementById("language").innerHTML = helloJson[language]["language"];
+            document.getElementById("helloLanguage").innerHTML = helloJson[language]["language"];
             
             // Set up the clock
             document.getElementById("clock").innerHTML = getTime();
